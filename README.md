@@ -95,9 +95,7 @@ TypeScript é uma linguagem de programação de código aberto desenvolvida pela
 
 1. Instale o TypeScript globalmente usando npm:
 
-   plaintext
-
-   ![Done](chrome-extension://igpdmclhhlcpoindmhkhillbfhdgoegm/b3baca6de20012788f7d.svg)![Copy](chrome-extension://igpdmclhhlcpoindmhkhillbfhdgoegm/7120b68615ebe4b28075.svg)
+ npm install -g typescript
 
    ```plaintext
    npm install -g typescript
@@ -105,11 +103,10 @@ TypeScript é uma linguagem de programação de código aberto desenvolvida pela
 
 2. Crie um novo projeto TypeScript:
 
-   plaintext
-
-   ![Done](chrome-extension://igpdmclhhlcpoindmhkhillbfhdgoegm/b3baca6de20012788f7d.svg)![Copy](chrome-extension://igpdmclhhlcpoindmhkhillbfhdgoegm/7120b68615ebe4b28075.svg)
-
-   ```plaintext
+  mkdir meu-projeto-typescript
+cd meu-projeto-typescript
+npm init -y
+t
    mkdir meu-projeto-typescript
    cd meu-projeto-typescript
    npm init -y
@@ -117,11 +114,8 @@ TypeScript é uma linguagem de programação de código aberto desenvolvida pela
 
 3. Adicione o TypeScript ao projeto:
 
-   plaintext
+ npm install --save-dev typescript
 
-   ![Done](chrome-extension://igpdmclhhlcpoindmhkhillbfhdgoegm/b3baca6de20012788f7d.svg)![Copy](chrome-extension://igpdmclhhlcpoindmhkhillbfhdgoegm/7120b68615ebe4b28075.svg)
-
-   ```plaintext
    npm install --save-dev typescript
    ```
 
@@ -132,9 +126,11 @@ TypeScript é uma linguagem de programação de código aberto desenvolvida pela
 
 **Exemplo de Código TypeScript:**
 
-typescript
+// main.ts
+let nome: string = "João";
+let idade: number = 30;
 
-![Done](chrome-extension://igpdmclhhlcpoindmhkhillbfhdgoegm/b3baca6de20012788f7d.svg)![Copy](chrome-extension://igpdmclhhlcpoindmhkhillbfhdgoegm/7120b68615ebe4b28075.svg)
+console.log(`Nome: ${nome}, Idade: ${idade}`);
 
 ```typescript
 // main.ts
@@ -150,9 +146,7 @@ console.log(`Nome: ${nome}, Idade: ${idade}`);
 
 2. Compile o TypeScript para JavaScript usando o comando:
 
-   plaintext
-
-   ![Done](chrome-extension://igpdmclhhlcpoindmhkhillbfhdgoegm/b3baca6de20012788f7d.svg)![Copy](chrome-extension://igpdmclhhlcpoindmhkhillbfhdgoegm/7120b68615ebe4b28075.svg)
+  tsc
 
    ```plaintext
    tsc
@@ -164,9 +158,7 @@ console.log(`Nome: ${nome}, Idade: ${idade}`);
 
 2. Execute o JavaScript usando o comando:
 
-   plaintext
-
-   ![Done](chrome-extension://igpdmclhhlcpoindmhkhillbfhdgoegm/b3baca6de20012788f7d.svg)![Copy](chrome-extension://igpdmclhhlcpoindmhkhillbfhdgoegm/7120b68615ebe4b28075.svg)
+node main.js
 
    ```plaintext
    node main.js
